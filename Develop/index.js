@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+// Packages For Application
 const inquirer = require('inquirer');
 const fs = require('fs')
 const generateMarkdown = require('./utils/generateMarkdown.js');
-// TODO: Create an array of questions for user input
+// Array of Questions
 const questions = [
     
     {
@@ -33,7 +33,7 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: 'License that will best suit project',
-        choices: ['MPL 2.0','GNU','Apache','MIT','None'],
+        choices: ['ISC','GNU','Apache','MIT','None'],
     },
 
     {
@@ -61,7 +61,7 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         if (err) {
@@ -71,7 +71,7 @@ function writeToFile(fileName, data) {
     });
 };
 
-// TODO: Create a function to initialize app
+// Function to initialize app
 function init() {
     inquirer.prompt(questions)
     .then(function (userInput) {
