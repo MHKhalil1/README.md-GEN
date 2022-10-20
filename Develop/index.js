@@ -26,38 +26,38 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: 'How do you use this project',
+        message: 'How do you use this project?',
     },
 
     {
         type: 'list',
         name: 'license',
-        message: 'License that will best suit project',
+        message: 'License that will best suit project?',
         choices: ['ISC','GNU','Apache','MIT','None'],
     },
 
     {
         type: 'input',
         name: 'contribution',
-        message: 'How can users contribute to the project',
+        message: 'How can users contribute to the project?',
     },
 
     {
         type: 'input',
         name: 'test',
-        message: 'How does the user test the project',
+        message: 'How does the user test the project?',
     },
 
     {
         type: 'input',
         name: 'github',
-        message: 'Enter GitHub Username',
+        message: 'Enter GitHub Username:',
     },
 
     {
         type: 'input',
         name: 'email',
-        message: 'Enter email',
+        message: 'Enter email:',
     },
 ];
 
