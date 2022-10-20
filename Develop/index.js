@@ -30,7 +30,7 @@ const questions = [
     },
 
     {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'License that will best suit project',
         choices: ['ISC','GNU','Apache','MIT','None'],
