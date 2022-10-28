@@ -1,13 +1,4 @@
 const fs = require('fs');
-// Function allowing location of badge at the top of README 
-function renderLicenseBadge(license) {
-  if (!license) {
-    return '';
-  }
-  else {
-    return '[!${license} license](https://img.shields.io/badge/License-$%7Blicense%7D-red.svg)]($renderLicenseLink(license)%7D)'
-  }
-}
 
 // Function to Return Links
 function renderLicenseLink(license){
@@ -31,12 +22,15 @@ function renderLicenseSection(license){
     return '';
   }
   else {
-    return'##License'
+    return'## License'
   }
 }
 // Function to Generate Markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ![License](https://img.shields.io/badge/License-${data.license}-blue.svg)
+
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)

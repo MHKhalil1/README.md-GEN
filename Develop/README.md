@@ -1,4 +1,7 @@
 # README Generator
+  
+  ![License](https://img.shields.io/badge/License-ISC-blue.svg)
+
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
